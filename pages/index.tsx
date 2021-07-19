@@ -1,9 +1,14 @@
 import { Card, CardHeader, CardBody, Anchor, Image } from 'grommet'
 import { Github, Medium } from 'grommet-icons'
+import HeadTag from '../components/head'
 
 export default function Home() {
   return (
     <>
+      <HeadTag
+        title='asny23のホームページ'
+        description='thinking cola'
+      />
       <Card>
         <CardHeader>
           <>
