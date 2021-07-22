@@ -1,12 +1,13 @@
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { Grommet, Header, Heading, Box, Button } from 'grommet'
+import { theme } from '../config/theme'
 
 const MyApp = ({ Component, pageProps }: AppProps) => {
   const router = useRouter()
   return(
     <>
-      <Grommet>
+      <Grommet theme={theme}>
         <Header direction='column'>
           <>
             <Heading level={1} textAlign='center'>
