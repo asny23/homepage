@@ -1,4 +1,4 @@
-import { Card, CardHeader, CardBody, Anchor, Image } from 'grommet'
+import { Box, Card, CardHeader, CardBody, Anchor, Text, Image } from 'grommet'
 import { Github, Medium } from 'grommet-icons'
 import HeadTag from '../components/head'
 
@@ -9,6 +9,10 @@ export default function Home() {
         title='asny23のホームページ'
         description='thinking cola'
       />
+      <Box align='center' pad='small'>
+        <Image src='/asny.png'/>
+        <Text>yun asny23</Text>
+      </Box>
       <Card>
         <CardHeader>
           <>
