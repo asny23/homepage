@@ -1,0 +1,8 @@
+[[redirects]]
+  from = "/place"
+  to = "https://place-asny23hub.vercel.app/place"
+  status = 200
+[[redirects]]
+  from = "/place/*"
+  to = "https://place-asny23hub.vercel.app/place/:splat"
+  status = 200
