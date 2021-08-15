@@ -1,4 +1,5 @@
 import HeadTag from '../../components/head'
+import Produit from '../../components/produit'
 
 export default function Produits() {
   return (
@@ -6,6 +7,50 @@ export default function Produits() {
       <HeadTag
         title='Produits / asny23のホームページ'
         description='made from thinking'
+      />
+      <Produit
+        name='FavorCreates'
+        url='https://favor-creates.cf/'
+        description='You can mark&find favorite creations in FavorCreates'
+        tags={['Typescript', 'Next.js', 'Vercel', 'Firebase', 'algolia']}
+      />
+      <Produit
+        name='micro-open-graph'
+        forked
+        url='https://github.com/asny23/micro-open-graph'
+        description='Open Graph data scraper'
+        tags={['Node.js', 'micro', 'Vercel']}
+      />
+      <Produit
+        name='EasyIssue'
+        url='https://gitlab.com/asny23/easy-issue'
+        description='A simple issue view & post app'
+        tags={['Typescript', 'Next.js', 'SheetDB']}
+      />
+      <Produit
+        name='docker-hub-search'
+        forked
+        url='https://addons.mozilla.org/ja/firefox/addon/docker-hub-search/'
+        description='Firefox Addon for searching Docker Hub quickly'
+        tags={['WebExtensions', 'Firefox']}
+      />
+      <Produit
+        name='firebase-functions-tavern'
+        url='https://hub.docker.com/r/asny23/firebase-functions-tavern'
+        description='Docker image for firebase functions CI'
+        tags={['Docker', 'firebase-tools', 'Tavern']}
+      />
+      <Produit
+        name='thinking-language'
+        url='https://github.com/asny23/thinking-language'
+        description='Brainf*ck based programming language🤔'
+        tags={['Ruby', 'r-fxxk']}
+      />
+      <Produit
+        name='hyper-cola-theme'
+        url='https://github.com/asny23/hyper-cola-theme'
+        description='Cola color theme for Hyper terminal'
+        tags={['Hyper']}
       />
     </>
   )
