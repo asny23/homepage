@@ -7,5 +7,28 @@ export const theme = {
       },
       brand: '#383C57'
     }
+  },
+  card: {
+    container: {
+      width: 'medium',
+      margin: {
+        vertical: 'medium',
+        horizontal: 'auto'
+      },
+      pad: 'small'
+    }
+  },
+  button: {
+    border: {
+      color: 'brand'
+    },
+  },
+  heading: {
+    extend: 'max-width: unset;'
+  },
+  icon: {
+    size: {
+      medium: '32px'
+    }
   }
 }
