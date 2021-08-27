@@ -1,3 +1,4 @@
+import '../styles/globals.css'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { Grommet, Header, Heading, Box, Button } from 'grommet'
