@@ -31,7 +31,9 @@ const Produit = ({name, forked, url, description, tags}: Props) => {
         </CardHeader>
         <CardBody>
           <Anchor href={url} label={url} target='_blank' rel='noreferer'/>
-          <Paragraph margin='xsmall'>{description}</Paragraph>
+          <Paragraph margin='xsmall' fill={true}>
+            {description}
+          </Paragraph>
           {tags?.length && renderTags(tags)}
         </CardBody>
       </Card>
