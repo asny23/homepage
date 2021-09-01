@@ -17,10 +17,12 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             <Box direction='row'>
               <Button
                 label='Produits'
+                primary={router.pathname.startsWith('/produits')}
                 onClick={() => router.push('/produits/')}
               />
               <Button
                 label='Top'
+                primary={router.pathname === '/'}
                 onClick={() => router.push('/')}
               />
               <Button
