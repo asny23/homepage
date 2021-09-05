@@ -8,6 +8,9 @@ export const theme = {
       brand: '#383C57'
     }
   },
+  heading: {
+    extend: 'max-width: unset;'
+  },
   card: {
     container: {
       width: 'medium',
@@ -22,9 +25,6 @@ export const theme = {
     border: {
       color: 'brand'
     },
-  },
-  heading: {
-    extend: 'max-width: unset;'
   },
   icon: {
     size: {
