@@ -10,7 +10,7 @@ export default function Produits() {
       />
       <Produit
         name='FavorCreates'
-        url='https://favor-creates.cf/'
+        url='https://favorcreates.cf/'
         description='You can mark&find favorite creations in FavorCreates'
         tags={['Typescript', 'Next.js', 'Vercel', 'Firebase', 'algolia']}
       />
