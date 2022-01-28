@@ -15,11 +15,17 @@ export default function Produits() {
         tags={['Typescript', 'Next.js', 'Vercel', 'Firebase', 'algolia']}
       />
       <Produit
+        name='metacog'
+        url='https://github.com/asny23/metacog'
+        description='Open Graph data scraper API'
+        tags={['Node.js', 'metascraper']}
+      />
+      <Produit
         name='micro-open-graph'
         forked
         url='https://github.com/asny23/micro-open-graph'
-        description='Open Graph data scraper'
-        tags={['Node.js', 'micro', 'Vercel']}
+        description='Open Graph data scraper API'
+        tags={['Node.js', 'micro', 'metascraper']}
       />
       <Produit
         name='EasyIssue'
