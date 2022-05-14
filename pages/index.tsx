@@ -28,7 +28,7 @@ export default function Home() {
         <CardHeader>
           <>
             GitLab
-            <Image src='/gitlab-icon.svg' height='40px' width='40px'/>
+            <Image src='/gitlab-icon.svg#svgView(viewBox(70,70,240,240))' height='32px' width='32px'/>
           </>
         </CardHeader>
         <CardBody>
