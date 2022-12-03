@@ -46,6 +46,17 @@ export default function Home() {
           <Anchor href='https://asny23.medium.com/' label='https://asny23.medium.com/' target='_blank' rel='noreferer'/>
         </CardBody>
       </Card>
+      <Card>
+        <CardHeader>
+          <>
+            Adventar
+            <Image src='https://raw.githubusercontent.com/adventar/adventar/main/frontend/static/icon192.png' height='32px' width='32px'/>
+          </>
+        </CardHeader>
+        <CardBody>
+          <Anchor href='https://adventar.org/users/16612' label='https://adventar.org/users/16612' target='_blank' rel='noreferer'/>
+        </CardBody>
+      </Card>
     </>
   )
 }
