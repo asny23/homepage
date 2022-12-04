@@ -30,7 +30,7 @@ const Produit = ({name, forked, url, description, tags}: Props) => {
           </>
         </CardHeader>
         <CardBody>
-          <Anchor href={url} label={url} target='_blank' rel='noreferer'/>
+          <Anchor href={url} label={url} target='_blank' rel='noreferer' />
           <Paragraph margin='xsmall' fill={true}>
             {description}
           </Paragraph>

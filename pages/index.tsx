@@ -10,7 +10,7 @@ export default function Home() {
         description='thinking cola'
       />
       <Box align='center' pad='small'>
-        <Image src='/asny.png'/>
+        <Image src='/asny.png' />
         <Text>yun asny23</Text>
       </Box>
       <Card>
@@ -21,18 +21,18 @@ export default function Home() {
           </>
         </CardHeader>
         <CardBody>
-          <Anchor href='https://github.com/asny23' label='https://github.com/asny23' target='_blank' rel='noreferer'/>
+          <Anchor href='https://github.com/asny23' label='https://github.com/asny23' target='_blank' rel='noreferer' />
         </CardBody>
       </Card>
       <Card>
         <CardHeader>
           <>
             GitLab
-            <Image src='/gitlab-icon.svg#svgView(viewBox(70,70,240,240))' height='32px' width='32px'/>
+            <Image src='/gitlab-icon.svg#svgView(viewBox(70,70,240,240))' height='32px' width='32px' />
           </>
         </CardHeader>
         <CardBody>
-          <Anchor href='https://gitlab.com/asny23' label='https://gitlab.com/asny23' target='_blank' rel='noreferer'/>
+          <Anchor href='https://gitlab.com/asny23' label='https://gitlab.com/asny23' target='_blank' rel='noreferer' />
         </CardBody>
       </Card>
       <Card>
@@ -43,18 +43,18 @@ export default function Home() {
           </>
         </CardHeader>
         <CardBody>
-          <Anchor href='https://asny23.medium.com/' label='https://asny23.medium.com/' target='_blank' rel='noreferer'/>
+          <Anchor href='https://asny23.medium.com/' label='https://asny23.medium.com/' target='_blank' rel='noreferer' />
         </CardBody>
       </Card>
       <Card>
         <CardHeader>
           <>
             Adventar
-            <Image src='https://raw.githubusercontent.com/adventar/adventar/main/frontend/static/icon192.png' height='32px' width='32px'/>
+            <Image src='https://raw.githubusercontent.com/adventar/adventar/main/frontend/static/icon192.png' height='32px' width='32px' />
           </>
         </CardHeader>
         <CardBody>
-          <Anchor href='https://adventar.org/users/16612' label='https://adventar.org/users/16612' target='_blank' rel='noreferer'/>
+          <Anchor href='https://adventar.org/users/16612' label='https://adventar.org/users/16612' target='_blank' rel='noreferer' />
         </CardBody>
       </Card>
     </>
