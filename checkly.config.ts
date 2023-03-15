@@ -29,12 +29,9 @@ export default defineConfig({
     runtimeId: '2022.10',
     frequency: 1440,
     locations: ['ap-northeast-1', 'us-east-1'],
-    tags: [],
+    tags: ['homepage'],
     alertChannels: [emailChannel, slackChannel],
-    checkMatch: 'tests/*.check.ts',
-    browserChecks: {
-      testMatch: 'tests/*.spec.ts',
-    },
+    checkMatch: 'tests/*.check.ts'
   },
   cli: {
     runLocation: 'ap-northeast-1'
