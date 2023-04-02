@@ -1,0 +1,21 @@
+name: deploy Checkly monitoring
+on:
+  push:
+    branches:
+      - 'main'
+    paths:
+      - 'tests/**'
+      - 'checkly.*'
+
+jobs:
+  deploy-checkly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-node@v3
+        with:
+          node-version-file: 'package.json'
+          cache: 'npm'
+      - run: npm ci
+      - name: deploy
+        run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} npx checkly deploy
