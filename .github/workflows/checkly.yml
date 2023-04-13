@@ -18,4 +18,7 @@ jobs:
           cache: 'npm'
       - run: npm ci
       - name: deploy
+        env:
+          CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
+          CHECKLY_API_KEY: ${{ secrets.CHECKLY_API_KEY }}
         run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} npx checkly deploy
