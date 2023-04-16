@@ -6,6 +6,7 @@ on:
     paths:
       - 'tests/**'
       - 'checkly.*'
+      - '.github/workflows/checkly.yml'
 
 jobs:
   deploy-checkly:
@@ -21,4 +22,4 @@ jobs:
         env:
           CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
           CHECKLY_API_KEY: ${{ secrets.CHECKLY_API_KEY }}
-        run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} npx checkly deploy
+        run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} npx checkly deploy -f
