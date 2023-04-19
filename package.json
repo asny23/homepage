@@ -9,19 +9,19 @@
     "build": "next build && next export"
   },
   "dependencies": {
-    "grommet": "^2.28.0",
-    "grommet-icons": "^4.8.0",
-    "next": "13.0.6",
+    "grommet": "^2.31.0",
+    "grommet-icons": "^4.10.0",
+    "next": "13.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.9"
   },
   "devDependencies": {
-    "@checkly/cli": "^0.4.7",
-    "@types/node": "^18.11.12",
-    "@types/react": "^18.0.26",
+    "@checkly/cli": "^0.4.12",
+    "@types/node": "^18.15.11",
+    "@types/react": "^18.0.37",
     "ts-node": "^10.9.1",
-    "typescript": "^4.9.4"
+    "typescript": "^5.0.4"
   },
   "volta": {
     "node": "18.12.1",
