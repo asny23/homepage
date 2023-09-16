@@ -1,5 +1,5 @@
-import { defineConfig } from '@checkly/cli'
-import { EmailAlertChannel, SlackAlertChannel } from '@checkly/cli/constructs'
+import { defineConfig } from 'checkly'
+import { Frequency, EmailAlertChannel, SlackAlertChannel } from 'checkly/constructs'
 
 const sendDefaults = {
   sendFailure: true,
@@ -27,7 +27,7 @@ export default defineConfig({
     activated: true,
     muted: false,
     runtimeId: '2022.10',
-    frequency: 1440,
+    frequency: Frequency.EVERY_12H,
     locations: ['ap-northeast-1', 'us-east-1'],
     tags: ['homepage'],
     alertChannels: [emailChannel, slackChannel],

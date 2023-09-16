@@ -1,4 +1,4 @@
-import { BrowserCheck } from '@checkly/cli/constructs'
+import { BrowserCheck } from 'checkly/constructs'
 
 new BrowserCheck('homepage-browser-check', {
   name: 'Homepage',
