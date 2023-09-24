@@ -4,3 +4,11 @@
 ![](https://api.checklyhq.com/v1/badges/checks/3858b94f-6405-48b2-a233-f6cc6c702814?style=flat&theme=default)
 
 Homepage of yun asny23
+
+---
+
+## Notes
+
+- Deploy monitoring:
+
+  `$ CHECKLY_EMAIL=** CHECKLY_SLACK_URL=CHECKLY_SLACK_URL=https://hooks.slack.com/services/**** npx checkly deploy`
