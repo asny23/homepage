@@ -9,6 +9,12 @@ export default function Produits() {
         description='made from thinking'
       />
       <Produit
+        name='.lack'
+        url='https://dotlack.vercel.app/'
+        description='message aggregator for Slack'
+        tags={['Typescript', 'Next.js', 'Vercel', 'Slack']}
+      />
+      <Produit
         name='FavorCreates'
         url='https://favorcreates.cf/'
         description='You can mark&find favorite creations in FavorCreates'
