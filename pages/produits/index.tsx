@@ -9,6 +9,12 @@ export default function Produits() {
         description='made from thinking'
       />
       <Produit
+        name='misezan'
+        url='https://rubygems.org/gems/misezan'
+        description='見せ算 implemented on Integer'
+        tags={['Ruby', 'RubyGems']}
+      />
+      <Produit
         name='.lack'
         url='https://dotlack.vercel.app/'
         description='message aggregator for Slack'
