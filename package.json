@@ -6,7 +6,7 @@
     "setup": "npm i -g netlify-cli",
     "dev": "next dev",
     "local": "netlify dev",
-    "build": "next build && next export"
+    "build": "next build"
   },
   "dependencies": {
     "grommet": "^2.33.2",
