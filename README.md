@@ -11,4 +11,4 @@ Homepage of yun asny23
 
 - Deploy monitoring:
 
-  `$ CHECKLY_EMAIL=** CHECKLY_SLACK_URL=CHECKLY_SLACK_URL=https://hooks.slack.com/services/**** npx checkly deploy`
+  `$ CHECKLY_EMAIL=** CHECKLY_SLACK_URL=https://hooks.slack.com/services/**** bun x checkly deploy`

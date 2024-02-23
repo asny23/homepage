@@ -1,4 +1,4 @@
-name: deploy Checkly monitoring
+name: Deploy Checkly monitoring
 on:
   push:
     branches:
@@ -12,14 +12,13 @@ jobs:
   deploy-checkly:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
         with:
-          node-version-file: 'package.json'
-          cache: 'npm'
-      - run: npm ci
+          bun-version: 1.0.x
+      - run: bun install --frozen-lockfile
       - name: deploy
         env:
           CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
           CHECKLY_API_KEY: ${{ secrets.CHECKLY_API_KEY }}
-        run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} npx checkly deploy -f
+        run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} bun x checkly deploy -f
