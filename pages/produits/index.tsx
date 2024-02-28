@@ -6,7 +6,7 @@ export default function Produits() {
     <>
       <HeadTag
         title='Produits / asny23のホームページ'
-        description='made from thinking'
+        description='Made from thinking'
       />
       <Produit
         name='misezan'
@@ -17,20 +17,27 @@ export default function Produits() {
       <Produit
         name='.lack'
         url='https://dotlack.vercel.app/'
-        description='message aggregator for Slack'
+        description='Message aggregator for Slack'
         tags={['Typescript', 'Next.js', 'Vercel', 'Slack']}
-      />
-      <Produit
-        name='FavorCreates'
-        url='https://favorcreates.cf/'
-        description='You can mark&find favorite creations in FavorCreates'
-        tags={['Typescript', 'Next.js', 'Vercel', 'Firebase', 'algolia']}
       />
       <Produit
         name='metacog'
         url='https://github.com/asny23/metacog'
         description='Open Graph data scraper API'
         tags={['Node.js', 'metascraper']}
+      />
+      <Produit
+        name='docker-hub-search'
+        forked
+        url='https://addons.mozilla.org/ja/firefox/addon/docker-hub-search/'
+        description='Firefox Addon for searching Docker Hub quickly'
+        tags={['WebExtensions', 'Firefox']}
+      />
+      <Produit
+        name='FavorCreates'
+        url='https://favorcreates.cf/'
+        description='You can mark&find favorite creations in FavorCreates'
+        tags={['Typescript', 'Next.js', 'Vercel', 'Firebase', 'algolia']}
       />
       <Produit
         name='micro-open-graph'
@@ -44,13 +51,6 @@ export default function Produits() {
         url='https://gitlab.com/asny23/easy-issue'
         description='A simple issue view & post app'
         tags={['Typescript', 'Next.js', 'SheetDB']}
-      />
-      <Produit
-        name='docker-hub-search'
-        forked
-        url='https://addons.mozilla.org/ja/firefox/addon/docker-hub-search/'
-        description='Firefox Addon for searching Docker Hub quickly'
-        tags={['WebExtensions', 'Firefox']}
       />
       <Produit
         name='firebase-functions-tavern'
