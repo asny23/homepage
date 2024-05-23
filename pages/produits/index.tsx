@@ -9,6 +9,12 @@ export default function Produits() {
         description='Made from thinking'
       />
       <Produit
+        name='DeVolta'
+        url='https://hub.docker.com/r/asny23/devolta'
+        description='Volta installed minideb container image'
+        tags={['Docker', 'Volta']}
+      />
+      <Produit
         name='misezan'
         url='https://rubygems.org/gems/misezan'
         description='見せ算 implemented on Integer'
