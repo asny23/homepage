@@ -21,16 +21,22 @@ export default function Produits() {
         tags={['Ruby', 'RubyGems']}
       />
       <Produit
-        name='.lack'
-        url='https://dotlack.vercel.app/'
-        description='Message aggregator for Slack'
-        tags={['Typescript', 'Next.js', 'Vercel', 'Slack']}
-      />
-      <Produit
         name='metacog'
         url='https://github.com/asny23/metacog'
         description='Open Graph data scraper API'
         tags={['Node.js', 'metascraper']}
+      />
+      <Produit
+        name='darts-travel'
+        url='https://asny23.github.io/darts-travel/'
+        description='Choose your travel destination with darts'
+        tags={['JavaScript', 'React']}
+      />
+      <Produit
+        name='.lack'
+        url='https://dotlack.vercel.app/'
+        description='Message aggregator for Slack'
+        tags={['Typescript', 'Next.js', 'Vercel', 'Slack']}
       />
       <Produit
         name='docker-hub-search'
