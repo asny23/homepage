@@ -3,6 +3,7 @@
   "version": "2.0.1",
   "private": true,
   "scripts": {
+    "prepare": "next telemetry disable",
     "setup": "bun add -g netlify-cli",
     "dev": "next dev",
     "local": "netlify dev",
