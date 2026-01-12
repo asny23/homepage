@@ -2,6 +2,9 @@
   "name": "@asny23/homepage",
   "version": "2.1.0",
   "private": true,
+  "engines": {
+    "bun": "1.3.x"
+  },
   "scripts": {
     "prepare": "next telemetry disable",
     "setup": "bun add -g netlify-cli",
