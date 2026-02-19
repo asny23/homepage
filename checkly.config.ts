@@ -1,39 +1,48 @@
-import { defineConfig } from 'checkly'
 import { Frequency, EmailAlertChannel, SlackAlertChannel } from 'checkly/constructs'
 
-const sendDefaults = {
-  sendFailure: true,
-  sendRecovery: true,
-  sendDegraded: false,
-  sslExpiry: true,
-  sslExpiryThreshold: 30
+const alertChannels = []
+
+if (process.env.CHECKLY_EMAIL) {
+  alertChannels.push(
+    new EmailAlertChannel('email-channel', {
+      sendFailure: true,
+      sendRecovery: true,
+      sendDegraded: false,
+      sslExpiry: true,
+      sslExpiryThreshold: 30,
+      address: process.env.CHECKLY_EMAIL
+    })
+  )
 }
 
-const emailChannel = new EmailAlertChannel('email-channel', {
-  address: process.env.CHECKLY_EMAIL || '',
-  ...sendDefaults
-})
+if (process.env.CHECKLY_SLACK_URL) {
+  alertChannels.push(
+    new SlackAlertChannel('slack-channel', {
+      sendFailure: true,
+      sendRecovery: true,
+      sendDegraded: false,
+      sslExpiry: true,
+      sslExpiryThreshold: 30,
+      url: process.env.CHECKLY_SLACK_URL
+    })
+  )
+}
 
-const slackChannel = new SlackAlertChannel('slack-channel', {
-  url: new URL(process.env.CHECKLY_SLACK_URL || 'https://hooks.slack.com/services/'),
-  ...sendDefaults
-})
-
-export default defineConfig({
+export default {
   projectName: 'Homepage',
   logicalId: 'homepage',
   repoUrl: 'https://github.com/asny23/homepage',
   checks: {
     activated: true,
     muted: false,
-    runtimeId: '2022.10',
+    runtimeId: '2025.04',
     frequency: Frequency.EVERY_12H,
     locations: ['ap-northeast-1', 'us-east-1'],
     tags: ['homepage'],
-    alertChannels: [emailChannel, slackChannel],
+    alertChannels: alertChannels,
     checkMatch: 'tests/*.check.ts'
   },
   cli: {
     runLocation: 'ap-northeast-1'
   }
-})
+}
