@@ -37,12 +37,12 @@ export default {
     muted: false,
     runtimeId: '2025.04',
     frequency: Frequency.EVERY_12H,
-    locations: ['ap-northeast-1', 'us-east-1'],
+    locations: ['us-east-1', 'eu-central-1'],
     tags: ['homepage'],
     alertChannels: alertChannels,
     checkMatch: 'tests/*.check.ts'
   },
   cli: {
-    runLocation: 'ap-northeast-1'
+    runLocation: 'us-east-1'
   }
 }
