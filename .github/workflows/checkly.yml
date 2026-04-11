@@ -15,8 +15,12 @@ jobs:
       - uses: actions/checkout@v6
       - uses: oven-sh/setup-bun@v2
       - run: bun install --frozen-lockfile
-      - name: deploy
+      - name: Deploy Checkly checks
         env:
           CHECKLY_ACCOUNT_ID: ${{ secrets.CHECKLY_ACCOUNT_ID }}
           CHECKLY_API_KEY: ${{ secrets.CHECKLY_API_KEY }}
-        run: CHECKLY_EMAIL=${{ secrets.CHECKLY_EMAIL }} CHECKLY_SLACK_URL=${{ secrets.CHECKLY_SLACK_URL }} bun x checkly deploy -f
+          CHECKLY_EMAIL: ${{ secrets.CHECKLY_EMAIL }}
+          CHECKLY_SLACK_URL: ${{ secrets.CHECKLY_SLACK_URL }}
+        run: |
+          bun x checkly deploy --preview
+          bun x checkly deploy --force --skip-dependencies
