@@ -22,7 +22,7 @@
   },
   "devDependencies": {
     "@types/react": "^19.2.18",
-    "checkly": "^7.15.0",
+    "checkly": "^8.20.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }
